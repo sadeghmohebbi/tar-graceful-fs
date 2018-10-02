@@ -1,21 +1,21 @@
-# tar-fs
+# tar-graceful-fs
 
 filesystem bindings for [tar-stream](https://github.com/mafintosh/tar-stream).
 
 ```
-npm install tar-fs
+npm install tar-graceful-fs
 ```
 
 [![build status](https://secure.travis-ci.org/mafintosh/tar-fs.png)](http://travis-ci.org/mafintosh/tar-fs)
 
 ## Usage
 
-tar-fs allows you to pack directories into tarballs and extract tarballs into directories.
+tar-graceful-fs allows you to pack directories into tarballs and extract tarballs into directories.
 
 It doesn't gunzip for you, so if you want to extract a `.tar.gz` with this you'll need to use something like [gunzip-maybe](https://github.com/mafintosh/gunzip-maybe) in addition to this.
 
 ``` js
-var tar = require('tar-fs')
+var tar = require('tar-graceful-fs')
 var fs = require('fs')
 
 // packing a directory
@@ -155,7 +155,7 @@ var mypack = tar.pack('./my-directory', {
 Packing and extracting a 6.1 GB with 2496 directories and 2398 files yields the following results on my Macbook Air.
 [See the benchmark here](https://gist.github.com/mafintosh/8102201)
 
-* tar-fs: 34.261 ms
+* tar-graceful-fs: 34.261 ms
 * [node-tar](https://github.com/isaacs/node-tar): 366.123 ms (or 10x slower)
 
 ## License
