@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "chownr": "^1.0.1",
+    "graceful-fs": "^4.1.11",
     "mkdirp": "^0.5.1",
     "pump": "^1.0.0",
     "tar-stream": "^1.1.2"
