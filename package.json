@@ -1,7 +1,11 @@
 {
-  "name": "tar-fs",
-  "version": "1.16.3",
-  "description": "filesystem bindings for tar-stream",
+  "name": "tar-graceful-fs",
+  "version": "1.0.0",
+  "description": "filesystem bindings for [tar-stream](https://github.com/mafintosh/tar-stream).",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "chownr": "^1.0.1",
     "mkdirp": "^0.5.1",
@@ -24,18 +28,14 @@
   "scripts": {
     "test": "standard && tape test/index.js"
   },
-  "bugs": {
-    "url": "https://github.com/mafintosh/tar-fs/issues"
-  },
-  "homepage": "https://github.com/mafintosh/tar-fs",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "author": "Mathias Buus",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/tar-fs.git"
-  }
+    "url": "git+https://github.com/sadeghmohebbi/tar-graceful-fs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sadeghmohebbi/tar-graceful-fs/issues"
+  },
+  "homepage": "https://github.com/sadeghmohebbi/tar-graceful-fs#readme"
 }
